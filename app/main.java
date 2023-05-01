@@ -6,7 +6,11 @@ public class main {
 
   public static void main(String[] args) {
 
+<<<<<<< HEAD
     final int MAX_GEN = 100000;
+=======
+    final int MAX_GEN = 1000;
+>>>>>>> parent of 9f0dbd4 (tp3.v2)
     final int NUM_INDIVIDUOS = 20;
     final double X_BOUND = 10 ;// 20 e -20
     final double F = 0.5;
@@ -80,9 +84,12 @@ public class main {
     new_pop = new_pop;
     for (int i = 0; i < individuos.size(); i++) {
       String dadosDoIndividuo = "Individuo " + (i+1);
+<<<<<<< HEAD
       for (int j = 0; j < individuos.get(i).genes.length ; j++) {
         dadosDoIndividuo += "\t Genes " + (j+1)+": " +  individuos.get(i).genes[j];
       }
+=======
+>>>>>>> parent of 9f0dbd4 (tp3.v2)
       for (int j = 0; j <individuos.get(i).avaliacao.length ; j++) {
         dadosDoIndividuo += "\t Avaliacao " + (j+1)+": " +  individuos.get(i).avaliacao[j];
       }

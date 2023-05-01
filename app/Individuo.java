@@ -3,8 +3,13 @@ import java.util.Random;
 
 public class Individuo {
 
+<<<<<<< HEAD
     final int QTD_GENES = 2;
     final int QTD_AVALIACAO = 2;
+=======
+    final int QTD_GENES = 3;
+    final int QTD_AVALIACAO = 3;
+>>>>>>> parent of 9f0dbd4 (tp3.v2)
     public double[] genes;
 
     public double[] avaliacao;
@@ -23,12 +28,21 @@ public class Individuo {
 //        this.avaliacao[0] = (Math.pow(this.genes[0],2));
 //        this.avaliacao[1] = Math.pow(this.genes[0]-1,2);
         // problema 2
+<<<<<<< HEAD
         this.avaliacao[0] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1],2));
         this.avaliacao[1] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1]-2,2));
 //        // problema 2
 //        this.avaliacao[0] = (Math.pow(this.genes[0]-1,2))+(Math.pow(this.genes[1],2))+(Math.pow(this.genes[2],2));
 //        this.avaliacao[1] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1]-1,2))+(Math.pow(this.genes[2],2));
 //        this.avaliacao[2] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1],2))+(Math.pow(this.genes[2]-1,2));
+=======
+//        this.avaliacao[0] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1],2));
+//        this.avaliacao[1] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1]-2,2));
+        // problema 2
+        this.avaliacao[0] = (Math.pow(this.genes[0]-1,2))+(Math.pow(this.genes[1],2))+(Math.pow(this.genes[2],2));
+        this.avaliacao[1] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1]-1,2))+(Math.pow(this.genes[2],2));
+        this.avaliacao[2] = (Math.pow(this.genes[0],2))+(Math.pow(this.genes[1],2))+(Math.pow(this.genes[2]-1,2));
+>>>>>>> parent of 9f0dbd4 (tp3.v2)
     }
 
     public void gerarIndividuo(ArrayList<Individuo> individuos, int r1, int r2, int r3, double F){
